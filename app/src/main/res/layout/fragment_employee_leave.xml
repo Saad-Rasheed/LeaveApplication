@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeLeave">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tv_RequestHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leave - Request Creation"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_RequestHeading"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Leave Type:"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerLeaveType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtView"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@+id/txtView"
+            android:autofillHints="N/A" />
+
+        <TextView
+            android:id="@+id/txtLeavefrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="Date from"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
+            android:id="@+id/edLeavefrom"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/txtView"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/txtLeavefrom"
+            android:background="@drawable/edittext_bg"
+            android:drawableEnd="@drawable/ic_calendar"
+            android:drawablePadding="5dp"
+            android:focusable="false"
+            android:hint="Select Date"
+            android:textAlignment="center"
+            android:textColor="#121111"
+            app:dateFormat="dd-MM-yyyy" />
+
+        <TextView
+            android:id="@+id/txtLeaveto"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edLeavefrom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:gravity="left"
+            android:text="Date to"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
+            android:id="@+id/edLeaveto"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/edLeavefrom"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@+id/txtLeaveto"
+            android:background="@drawable/edittext_bg"
+            android:drawableEnd="@drawable/ic_calendar"
+            android:drawablePadding="5dp"
+            android:focusable="false"
+            android:hint="Select Date"
+            android:textAlignment="center"
+            app:dateFormat="dd-MM-yyyy" />
+
+        <CheckBox
+            android:id="@+id/halfday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edLeaveto"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+            android:padding="05dp"
+            android:text="Half Day"></CheckBox>
+
+        <RadioGroup
+            android:id="@+id/radioHalfdayType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/halfday"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_morning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Morning"
+                    android:padding="05dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_evening"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Evening"
+                    android:padding="10dp"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_TotalDays"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioHalfdayType"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:gravity="left"
+            android:hint="Total Days"
+            android:text="Total Days"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioHalfdayType"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/tv_TotalDays"
+            android:gravity="left"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ed_Remarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_days"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:hint="Remarks"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btn_Submit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/ed_Remarks"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            android:background="#201460"
+            android:text="Submit"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

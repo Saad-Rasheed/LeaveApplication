@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_RequestHeading"
+            android:text="Short Leave - Request Creation"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtTimefrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_RequestHeading"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="Time from"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_show_time_from"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/tv_RequestHeading"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/txtTimefrom"
+            android:textAlignment="center"
+            android:textColor="#121111"
+            android:drawableEnd="@drawable/ic_time"
+            android:drawablePadding="5dp"
+            android:hint="Select Time" />
+
+        <TextView
+            android:id="@+id/txtTimeto"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTimefrom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="17dp"
+            android:gravity="left"
+            android:text="Time to"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_show_time_to"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/tv_show_time_from"
+            android:layout_toRightOf="@+id/txtTimeto"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="12dp"
+            android:textAlignment="center"
+            android:drawableEnd="@drawable/ic_time"
+            android:drawablePadding="5dp"
+            android:hint="Select Time"/>
+
+        <TextView
+            android:id="@+id/tv_TotalTime"
+            android:layout_below="@+id/txtTimeto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Total Days"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:gravity="left"
+            android:text="Total Time"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_showTotalTime"
+            android:layout_below="@+id/tv_show_time_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_TotalTime"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:gravity="left"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/ed_Remarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_TotalTime"
+            android:hint="Remarks"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/btn_Submit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/ed_Remarks"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            android:background="#201460"
+            android:textColor="#ffffff"
+            android:text="Submit"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

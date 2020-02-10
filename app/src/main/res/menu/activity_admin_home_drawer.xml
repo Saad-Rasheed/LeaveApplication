@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_LeaveRequest"
+            android:icon="@drawable/ic_add_request"
+            android:title="@string/menu_LeaveRequest" />
+        <item
+            android:id="@+id/nav_ShortLeaveRequest"
+            android:icon="@drawable/ic_add_request"
+            android:title="Short Leave Request" />
+        <item
+            android:id="@+id/nav_LeaveApproval"
+            android:icon="@drawable/ic_approval_alert"
+            android:title="@string/menu_LeaveApproval" />
+        <item
+            android:id="@+id/nav_employeedetails"
+            android:icon="@drawable/ic_account_circle"
+            android:title="@string/menu_employeedetails" />
+        <item
+            android:id="@+id/nav_ChangePassword"
+            android:icon="@drawable/password_icon"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about_icon"
+            android:title="About" />
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@drawable/signout"
+            android:title="Logout" />
+    </group>
+
+</menu>

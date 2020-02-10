@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Leave Application</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Saad Rasheed</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Logout</string>
+    <string name="login_note">To access all features of the app provided by Developers. You need to <b>Register yourself</b>.</string>
+    <string name="changepasswordtext">For security reasons, your password needs at least or more than <b>08 characters</b>, consisting of: \n • upper and lower case letters \n • numbers</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_LeaveRequest">Leave - Request</string>
+    <string name="menu_LeaveApproval">Leave - Approved</string>
+    <string name="menu_employeedetails">Employee Details</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_admin__home">Admin</string>
+    <string name="default_notification_channel_id">my_channel_01</string>
+    <string name="default_notification_channel_title" />
+</resources>

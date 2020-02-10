@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "833850372524",
+    "firebase_url": "https://agpleaveapplication.firebaseio.com",
+    "project_id": "agpleaveapplication",
+    "storage_bucket": "agpleaveapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833850372524:android:3d57247d8e4f0693b20a09",
+        "android_client_info": {
+          "package_name": "com.agp.leaveapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833850372524-b6ati884f4gdvr96fclede2jdv0lgdnn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVPD5Sv0HzuDx_tcicdIH-F7q5xv7ZuoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833850372524-b6ati884f4gdvr96fclede2jdv0lgdnn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

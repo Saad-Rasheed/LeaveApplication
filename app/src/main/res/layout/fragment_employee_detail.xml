@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4.5"
+    tools:context=".EmployeeDetailFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="170dp"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@drawable/ic_avatar"
+        android:elevation="2dp"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="2dp"
+        app:srcCompat="@drawable/ic_avatar"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvEmployeeNo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/edittext_bg"
+        android:hint="First Name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/edittext_bg"
+        android:hint="First Name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/edittext_bg"
+        android:hint="Enter Mobile"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvDesignation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/edittext_bg"
+        android:gravity="start"
+        android:hint="Enter Address"
+        android:lines="1"
+        android:padding="10dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/savechanges"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.5"
+        android:background="#201460"
+        android:fontFamily="@font/lato_bold"
+        android:text="save changes"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
